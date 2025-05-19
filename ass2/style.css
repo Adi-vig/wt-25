@@ -1,0 +1,109 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Section */
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 14px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Results Section */
+  .results {
+    margin-top: 30px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 5px 0;
+  }
+  
+  strong {
+    color: #333;
+  }
+  
+  /* Tree Structure */
+  pre {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    overflow-x: auto;
+  }
+
+  h3 {
+    color: #a2a2a2;
+    font-family: "Courier New", monospace;
+  }
+  
+  /* Search Result */
+  #searchResult {
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
+  #searchResult.positive {
+    color: #28a745;
+  }
+  
+  #searchResult.negative {
+    color: #dc3545;
+  }
+  

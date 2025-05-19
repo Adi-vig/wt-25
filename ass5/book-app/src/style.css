@@ -1,0 +1,167 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body background and text color */
+body {
+    background-color: #f0f4f8;  /* Light background */
+    color: #333;  /* Dark text color */
+}
+
+/* Main container to be a flexbox with column direction */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensures footer stays at the bottom */
+}
+
+/* The content area will grow to fill the available space */
+.content {
+    flex: 1;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #4db8b0 !important;  /* Light teal background */
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Button Styles */
+.btn-light {
+    background-color: #4cc9f0;  /* Light blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-light:hover {
+    background-color: #3b98c4;  /* Darker blue on hover */
+}
+
+/* Catalog and Cart Sections */
+.card-link {
+    width: 18rem;
+    background-color: #e5f4f1;  /* Light teal background */
+    color: #333;
+    border-radius: 1rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    color: #4cc9f0;  /* Light blue on hover */
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Header Styles */
+.main-heading {
+    color: #1f8a8b;  /* Teal */
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4db8b0;  /* Light teal background */
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;  /* Keeps footer at the bottom */
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Form Styles (for Login, Registration, etc.) */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"], input[type="password"], input[type="email"], button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #4cc9f0;  /* Light blue border */
+    margin-bottom: 1rem;
+    background-color: #e5f4f1;  /* Light teal background for inputs */
+    color: #333;  /* Dark text color */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Placeholder text color */
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="email"]::placeholder {
+    color: #6c757d;  /* Gray placeholder */
+}
+
+/* Input focus styles */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, button:focus {
+    outline: none;
+    border-color: #1f8a8b;  /* Teal border on focus */
+    background-color: #d1e7e6;  /* Lighter teal background on focus */
+}
+
+button {
+    background-color: #4cc9f0;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b98c4;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #4cc9f0;
+}
+
+a:hover {
+    color: #1f8a8b;  /* Teal on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card-link {
+        width: 100%;  /* Full width for smaller screens */
+        margin-bottom: 1rem;
+    }
+}

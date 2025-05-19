@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tree Search & Sort Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tree Search & Sort (BST)</h1>
+
+    <div class="input-section">
+        <!-- Form for Insertion -->
+        <form id="insertForm" onsubmit="insertValue(); return false;">
+          <input type="number" id="valueInput" placeholder="Enter integer" required>
+          <button type="submit">Insert</button>
+        </form>
+        
+        <!-- Form for Search -->
+        <form id="searchForm" onsubmit="searchValue(); return false;">
+          <input type="number" id="searchInput" placeholder="Enter integer to search" required>
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      
+
+    <div class="results">
+      <p><strong>In-Order (Sorted):</strong> <span id="inOrderResult">[ ]</span></p>
+      <p><strong>Search Result:</strong> <span id="searchResult"></span></p>
+      <p><strong>Tree Structure:</strong></p>
+      <pre id="treeStructure"></pre>
+    </div>
+  </div>
+
+  <div class="container">
+    <h3>Created by Aditya Sakhare CSD-26</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    background-color: #1e1e2f;
+    color: #d6d6e7;
+  }
+  
+  /* Card container */
+  .card-link {
+    width: 18rem;
+    background-color: #2f2f42;
+    color: #d6d6e7;
+    border-radius: 1rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Hover effect */
+  .card-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    color: #4cc9f0;
+  }
+  
+  /* Card content */
+  .card-body {
+    padding: 2rem;
+  }
+  
+  /* Main Heading */
+  .main-heading {
+    color: #f72585;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 5rem;
+  }
+  
